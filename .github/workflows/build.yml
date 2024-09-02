@@ -1,0 +1,12 @@
+on:
+  [push]
+
+jobs:
+  build_static_mac:
+    name: build_static
+    runs-on: macos-13
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: begin
+      run: echo "hi"
